@@ -26,30 +26,22 @@ class StudentProfile extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                IconButton(onPressed: () {}, icon: Icon(Icons.account_circle_rounded),
-                  iconSize: 80,
-                  alignment: Alignment.center,)
-              ],
+          SizedBox(height: 30,),
+         Center(
+          child: Icon(Icons.account_circle,size: 100,
+          color: Colors.blueAccent,),
+          
+         ),
+          SizedBox(height: 10,),
+          Center(
+            child: Text("Muhammad Maaz",
+            style: TextStyle(fontSize: 24,
+            fontWeight: FontWeight.bold),),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text("Muhammad Maaz",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20,
-                  decoration: TextDecoration.underline,
-                  decorationColor: Colors.blueAccent,
-                ),
-              ),
-            ],
-          )
+          SizedBox(height: 10,),
+
         ],
       ),
-
     );
   }
 }
