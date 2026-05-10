@@ -24,6 +24,31 @@ class StudentProfile extends StatelessWidget {
         ),),
         centerTitle: true,
       ),
+      body: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton(onPressed: () {}, icon: Icon(Icons.account_circle_rounded),
+                  iconSize: 80,
+                  alignment: Alignment.center,)
+              ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text("Muhammad Maaz",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                  decoration: TextDecoration.underline,
+                  decorationColor: Colors.blueAccent,
+                ),
+              ),
+            ],
+          )
+        ],
+      ),
 
     );
   }
