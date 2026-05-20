@@ -47,43 +47,41 @@ class _smartCounterState extends State<smartCounter> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              Text("Current Counter", style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+              ),),
               SizedBox(
-                height: 100,
+                height: 20,
               ),
               Text("$count",style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight(400),
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
               ),
               ),
-
+              SizedBox(
+                height: 20,
+              ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                crossAxisAlignment: CrossAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ElevatedButton(onPressed: increment, child: Icon(Icons.add),
+
                     style: buttonStyles.primaryRed,
+
                   ),
                   SizedBox(
-                    height: 10,
+                    width: 10,
                   ),
-                  ElevatedButton(onPressed: decrement, child: Icon(Icons.minimize),
+                  ElevatedButton(onPressed: decrement, child: Icon(Icons.remove),
                   style: buttonStyles.primaryRed,),
-                ],
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  ElevatedButton(onPressed: reset, child: Icon(Icons.lock_reset),style: buttonStyles.primaryRed,
+                  SizedBox(
+                    width: 10,
                   ),
-                ],
+                  ElevatedButton(onPressed: reset, child: Icon(Icons.lock_reset),style: buttonStyles.primaryRed,
+                  ), ],
               ),
-              SizedBox(
-                height: 10,
-              ),
+
             ],
           ),
         ),
